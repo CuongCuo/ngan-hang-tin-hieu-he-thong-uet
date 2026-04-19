@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngân Hàng Câu Hỏi - Tín Hiệu & Hệ Thống</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar: Topics -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">📶</div>
+                <h2>Signals & Systems</h2>
+            </div>
+            
+            <div class="topic-section">
+                <h3>VÙNG KIẾN THỨC</h3>
+                <ul id="topic-list" class="topic-list">
+                    <!-- Topics will be dynamically loaded here -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="nav-info">
+                    <h1 id="current-topic-title">Vui lòng chọn một Chủ đề</h1>
+                    <p id="question-count">0 câu hỏi</p>
+                </div>
+            </header>
+
+            <div class="quiz-container" id="quiz-container">
+                <div class="empty-state">
+                    <div class="empty-icon">📚</div>
+                    <p>Hãy chọn một vùng kiến thức ở menu bên trái để bắt đầu ôn tập.</p>
+                </div>
+                <!-- Question images will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
